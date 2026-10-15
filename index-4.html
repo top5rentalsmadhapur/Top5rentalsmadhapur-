@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top 5 Rentals Madhapur | Madhapur & HITEC City</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f5f7fb,#101522);--surface:light-dark(#fff,#191f2e);--text:light-dark(#172033,#f5f7fb);--muted:light-dark(#657087,#b3bdd0);--line:light-dark(#e3e8f1,#30394c);--blue:light-dark(#2458e6,#8aa8ff);--accent:light-dark(#eaf0ff,#202f56)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.wrap{max-width:1120px;margin:auto;padding:0 20px}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:12px}.brand{font-weight:850;letter-spacing:-.4px}.brand span{color:var(--blue)}.nav a{color:var(--text);text-decoration:none;font-weight:650;margin-left:16px;font-size:14px}.hero{padding:44px 0 34px}.eyebrow{display:inline-block;padding:6px 11px;border-radius:99px;background:var(--accent);color:var(--blue);font-weight:750;font-size:12px;letter-spacing:.07em;text-transform:uppercase}.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-2px;max-width:750px;margin:18px 0}.hero p{max-width:660px;color:var(--muted);font-size:18px}.search{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.search input,.search select{padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;min-width:150px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 17px;border-radius:12px;background:var(--blue);color:white;text-decoration:none;font-weight:750;border:0;cursor:pointer}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 30px}.stat{padding:17px;border:1px solid var(--line);background:var(--surface);border-radius:16px}.stat strong{display:block;font-size:20px}.stat span{color:var(--muted);font-size:13px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 18px}.section-head h2{font-size:28px;letter-spacing:-.8px;margin:0}.section-head p{margin:5px 0 0;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{border:1px solid var(--line);background:var(--surface);border-radius:20px;overflow:hidden}.visual{min-height:150px;padding:18px;display:flex;align-items:end;background:linear-gradient(135deg,#173b79,#648eea 55%,#c3d4ff);color:#fff;position:relative}.visual:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,14,38,.5),transparent 80%)}.visual span{position:relative;font-size:13px;font-weight:750;background:rgba(9,18,43,.45);padding:6px 10px;border-radius:99px}.content{padding:20px}.topline{display:flex;justify-content:space-between;gap:12px;align-items:start}.content h3{margin:0;font-size:21px;letter-spacing:-.4px}.price{font-size:22px;font-weight:850;white-space:nowrap}.price small{font-size:12px;color:var(--muted);font-weight:500}.location{color:var(--muted);font-size:14px;margin:7px 0 14px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 17px}.tag{font-size:12px;border:1px solid var(--line);padding:5px 9px;border-radius:99px;color:var(--muted)}.actions{display:flex;gap:9px;flex-wrap:wrap}.actions a{font-size:14px}.secondary{border:1px solid var(--line);color:var(--text);background:transparent}.note{margin:18px 0 30px;color:var(--muted);font-size:13px}.cta{margin:36px 0;padding:28px;border-radius:22px;background:var(--accent);display:flex;justify-content:space-between;gap:20px;align-items:center}.cta h2{margin:0 0 6px}.cta p{margin:0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted);font-size:13px}.footerrow{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media(max-width:700px){.nav{align-items:flex-start}.nav a{margin-left:8px}.navlinks{display:flex;flex-wrap:wrap;justify-content:flex-end}.hero{padding-top:28px}.stats{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.topline{flex-direction:column}.price{font-size:24px}.cta{align-items:flex-start;flex-direction:column}.search input,.search select{width:100%}.search .btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <div class="brand">TOP<span>5</span> RENTALS MADHAPUR</div>
+  <nav class="navlinks"><a href="#properties">Properties</a><a href="#areas">Areas</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="wrap hero">
+  <span class="eyebrow">Madhapur · HITEC City · Hyderabad</span>
+  <h1>Find a rental that feels like <span style="color:var(--blue)">home.</span></h1>
+  <p>Explore selected rental listing examples around Madhapur and HITEC City. Compare BHK, monthly rent and furnishing, then open the source listing to confirm current availability.</p>
+  <div class="search">
+    <input id="search" type="search" placeholder="Search property or area…" aria-label="Search property or area">
+    <select id="bhk" aria-label="Filter by BHK"><option value="all">All BHK types</option><option value="1">1 BHK</option><option value="2">2 BHK</option><option value="3">3 BHK</option></select>
+    <button class="btn" onclick="filterCards()">Find homes</button>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>Madhapur</strong><span>Established residential area</span></div>
+    <div class="stat"><strong>HITEC City</strong><span>Close to the IT corridor</span></div>
+    <div class="stat"><strong>1–3 BHK</strong><span>Options shown in this starter page</span></div>
+  </div>
+</section>
+<section id="properties" class="wrap">
+  <div class="section-head"><div><h2>Featured rental listings</h2><p>Example listings found online — verify availability and terms before visiting.</p></div></div>
+  <div class="cards" id="cards">
+    <article class="card" data-bhk="1" data-search="aruna abode siddiq nagar madhapur 1 bhk semi furnished">
+      <div class="visual"><span>1 BHK · SEMI-FURNISHED</span></div>
+      <div class="content"><div class="topline"><h3>Aruna Abode</h3><div class="price">₹23,000<small>/ month</small></div></div><div class="location">Siddiq Nagar · Madhapur area</div><div class="tags"><span class="tag">1 BHK</span><span class="tag">500 sq.ft</span><span class="tag">Semi-furnished</span></div><div class="actions"><a class="btn" href="https://www.nobroker.in/flats-for-rent-in-hitec_city_madhapur_hyderabad" target="_blank" rel="noopener">View source listing ↗</a></div></div>
+    </article>
+    <article class="card" data-bhk="2" data-search="kosanam ashreya apartments madhapur 2 bhk">
+      <div class="visual" style="background:linear-gradient(135deg,#145c59,#52aaa0 55%,#c6f1df)"><span>2 BHK · APARTMENT</span></div>
+      <div class="content"><div class="topline"><h3>Kosanam Ashreya Apartments</h3><div class="price">₹33,500<small>/ month + maintenance</small></div></div><div class="location">Madhapur · Hyderabad</div><div class="tags"><span class="tag">2 BHK</span><span class="tag">1,350 sq.ft</span><span class="tag">Maintenance extra</span></div><div class="actions"><a class="btn" href="https://www.nobroker.in/flats-for-rent-in-hitech_city_hyderabad" target="_blank" rel="noopener">View source listing ↗</a></div></div>
+    </article>
+    <article class="card" data-bhk="3" data-search="kovelamudi ujwala madhapur 3 bhk fully furnished">
+      <div class="visual" style="background:linear-gradient(135deg,#67401b,#cb9450 55%,#f6dfaa)"><span>3 BHK · FURNISHED OPTION</span></div>
+      <div class="content"><div class="topline"><h3>Kovelamudi Ujwala</h3><div class="price">₹64,000+<small>/ month + maintenance</small></div></div><div class="location">Madhapur · Hyderabad</div><div class="tags"><span class="tag">3 BHK</span><span class="tag">1,960 sq.ft</span><span class="tag">Furnishing varies by listing</span></div><div class="actions"><a class="btn" href="https://www.nobroker.in/flats-for-rent-in-hitec_city__madhapur_hyderabad" target="_blank" rel="noopener">View source listing ↗</a></div></div>
+    </article>
+    <article class="card" data-bhk="3" data-search="sumukhi orbit hitech city madhapur 3 bhk">
+      <div class="visual" style="background:linear-gradient(135deg,#4b2a72,#9475c9 55%,#e1d4ff)"><span>3 BHK · SPACIOUS</span></div>
+      <div class="content"><div class="topline"><h3>Sumukhi Orbit</h3><div class="price">₹78,000+<small>/ month + maintenance</small></div></div><div class="location">Madhapur / HITEC City</div><div class="tags"><span class="tag">3 BHK</span><span class="tag">2,675 sq.ft</span><span class="tag">Semi-furnished listing</span></div><div class="actions"><a class="btn" href="https://www.nobroker.in/flats-for-rent-in-hitec_city_madhapur_hyderabad" target="_blank" rel="noopener">View source listing ↗</a></div></div>
+    </article>
+    <article class="card" data-bhk="3" data-search="my home navadweepa hitech city madhapur 3 bhk">
+      <div class="visual" style="background:linear-gradient(135deg,#173b50,#5f9db4 55%,#c8edf4)"><span>3 BHK · GATED COMMUNITY</span></div>
+      <div class="content"><div class="topline"><h3>My Home Navadweepa</h3><div class="price">₹70,000+<small>/ month</small></div></div><div class="location">Patrika Nagar · HITEC City Road</div><div class="tags"><span class="tag">3 BHK</span><span class="tag">Approx. 2,000 sq.ft listing</span><span class="tag">Maintenance may apply</span></div><div class="actions"><a class="btn" href="https://www.nobroker.in/flats-for-rent-in-hitec_city_madhapur_hyderabad" target="_blank" rel="noopener">View source listing ↗</a></div></div>
+    </article>
+  </div>
+  <p class="note">Important: This is a sample website using publicly surfaced listing examples, not a verified ranking or live inventory feed. Rents, deposits, maintenance, furnishing and availability can change. Confirm details directly with the listing provider/owner before paying anything.</p>
+</section>
+<section id="areas" class="wrap cta"><div><h2>Looking for a different budget or BHK?</h2><p>Filter the sample listings above, or use the source portals to see updated options.</p></div><a class="btn" href="https://www.nobroker.in/flats-for-rent-in-hitec_city_madhapur_hyderabad" target="_blank" rel="noopener">Browse more rentals ↗</a></section>
+<section id="contact" class="wrap cta"><div><h2>Want to enquire about a property?</h2><p>WhatsApp us on 9666126605 for rental property enquiries in Madhapur & HITEC City.</p></div><a class="btn" href="https://wa.me/919666126605?text=Hello%2C%20I%20am%20interested%20in%20rental%20properties%20in%20Madhapur%20%2F%20HITEC%20City." target="_blank" rel="noopener">WhatsApp Enquiry ↗</a></section>
+</main>
+<footer><div class="wrap footerrow"><span>© 2026 Top 5 Rentals Madhapur · Madhapur & HITEC City</span><span>WhatsApp: 9666126605 · Verify property details before visiting</span></div></footer>
+<script>
+function filterCards(){
+ const q=document.getElementById('search').value.trim().toLowerCase();
+ const b=document.getElementById('bhk').value;
+ document.querySelectorAll('.card').forEach(card=>{
+  const matchText=(card.dataset.search||'').includes(q);
+  const matchBhk=b==='all'||card.dataset.bhk===b;
+  card.style.display=matchText&&matchBhk?'':'none';
+ });
+}
+document.getElementById('search').addEventListener('input',filterCards);
+document.getElementById('bhk').addEventListener('change',filterCards);
+</script>
+</body></html>
